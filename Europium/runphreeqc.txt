@@ -1,13 +1,13 @@
 SOLUTION 1
-       pe      13.75
-       pH      7
+       pe      12.75
+       pH      8
        temp      25
 -units mol/kgw
 Eu 1e-06 
-Na 5e-15 
+Na 5e-05 
 N(+5) 3e-06 
-C(+4) 1e-15 
-P 1e-15 
+C(+4) 1e-05 
+P 1e-05 
 
 EQUILIBRIUM_PHASES 1
 Eu(OH)3   0.0   0
@@ -17,9 +17,9 @@ Eu2O3(cubic)   0.0   0
 Eu2O3(monoclinic)   0.0   0
 EuOHCO3   0.0   0
 EuPO4:10H2O   0.0   0
-       Fix_H+ -7          NaOH 10.0
+       Fix_H+ -8          NaOH 10.0
 -force_equality true
-       Fix_pe -13.75          O2
+       Fix_pe -12.75          O2
 -force_equality true
 
 SURFACE 1
@@ -74,7 +74,7 @@ Ha_cdfyyH3 4.96e-10
 Ha_cdgyyH3 4.96e-10 
 Ha_cdhyyH3 4.96e-10 
 -cd_music 
--capacitance 0.00067046 1e5 
+-capacitance 0.0022293 1e5 
 
 SELECTED_OUTPUT
 -file selected.out
