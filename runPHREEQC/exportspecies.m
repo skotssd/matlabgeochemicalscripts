@@ -1,0 +1,61 @@
+function II=exportspecies(REE)
+
+II=[...
+   {'Ha_aREE+2'}
+{'Ha_bREE+2'}
+{'Ha_cREE+2'}
+{'Ha_dREE+2'}
+{'Ha_eREE+2'}
+{'Ha_fREE+2'}
+{'Ha_gREE+2'}
+{'Ha_hREE+2'}
+{'Ha_abREE+'}
+{'Ha_cdREE+'}
+{'Ha_aeREE+'}
+{'Ha_bfREE+'}
+{'Ha_cgREE+'}
+{'Ha_dhREE+'}
+{'Ha_abxREE+'}
+{'Ha_cdxREE+'}
+{'Ha_aexREE+'}
+{'Ha_bfxREE+'}
+{'Ha_cgxREE+'}
+{'Ha_dhxREE+'}
+{'Ha_abxxREE+'}
+{'Ha_cdxxREE+'}
+{'Ha_aexxREE+'}
+{'Ha_bfxxREE+'}
+{'Ha_cgxxREE+'}
+{'Ha_dhxxREE+'}
+{'Ha_abeREE'}
+{'Ha_abfREE'}
+{'Ha_abgREE'}
+{'Ha_abhREE'}
+{'Ha_cdeREE'}
+{'Ha_cdfREE'}
+{'Ha_cdgREE'}
+{'Ha_cdhREE'}
+{'Ha_abeyREE'}
+{'Ha_abfyREE'}
+{'Ha_abgyREE'}
+{'Ha_abhyREE'}
+{'Ha_cdeyREE'}
+{'Ha_cdfyREE'}
+{'Ha_cdgyREE'}
+{'Ha_cdhyREE'}
+{'Ha_abeyyREE'}
+{'Ha_abfyyREE'}
+{'Ha_abgyyREE'}
+{'Ha_abhyyREE'}
+{'Ha_cdeyyREE'}
+{'Ha_cdfyyREE'}
+{'Ha_cdgyyREE'}
+{'Ha_cdhyyREE'}
+];
+
+for i=1:length(II)
+    str=II(i);
+    newStr=strrep(str,'REE',REE);
+    II(i)=newStr;
+end
+end
