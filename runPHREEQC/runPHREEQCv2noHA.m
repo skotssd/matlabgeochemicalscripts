@@ -42,6 +42,12 @@ fprintf(fileID,pefixline);
 fprintf(fileID,'-force_equality true\n');
 fprintf(fileID,'\n');
 
+% add in HFO surfaces -----------------------------------------------------
+fprintf(fileID,'SURFACE 1\n');
+%iphreeqc.AccumulateLine('-equilibrate 1');
+fprintf(fileID,'Hfo_wOH   Fe(OH)3(a)  equilibrium_phase 0.2     1e5\n');
+fprintf(fileID,'Hfo_sOH   Fe(OH)3(a)  equilibrium_phase 0.005\n');
+
 % define outputs of model ------------------------------------------------
 fprintf(fileID,'SELECTED_OUTPUT\n');
 fprintf(fileID,'-file selected.out\n');
