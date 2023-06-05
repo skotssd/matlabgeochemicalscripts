@@ -47,9 +47,9 @@ Pb       Pb+2           0.0     Pb              207.19
 Cu       Cu+2           0.0     Cu              63.546
 Cu(+2)   Cu+2           0.0     Cu
 Cu(+1)   Cu+1           0.0     Cu
-D        HD             0.0     C6H6O6          174.108
-D(0)     HD             0.0     C6H6O6          174.108
-D(-2)    H2HD           0.0     C6H8O6          176.108
+D        D              0.0     C6H6O6          174.108
+D(0)     D              0.0     C6H6O6          174.108
+D(-2)    D-2          0.0     C6H6O6          174.108
 
 SOLUTION_SPECIES
  
@@ -777,29 +777,35 @@ Pb+2 + 2 SO4-2 = Pb(SO4)2-2
 Pb+2 + NO3- = PbNO3+
         log_k           1.170
 
-HD = HD
-        log_k           0.000
+D  = D
+        log_k	0.000
 
-HD = D- + H+
-        -log_k	3.9
+D-2 + H+ = HD-1
+        log_k	11.82
 
-HD + 2H+ +2e-= H2HD
-        -log_k	13.22
+D-2 + 2H+ = H2D
+        log_k	16.13
 
-H2HD= HHD- + H+
-        -log_k	-4.17
+D + 2e- = D-2 
+        log_k	-2.1
 
-HHD- = HD-2 + H+
-        -log_k	-11.72
+HD- + Fe+2 = FeHD+
+        log_k   0.21
 
-Fe+2 + HHD- = FeHHD+
-        -log_k   1.1
+Fe+3 + D-2 = FeD+
+        log_k  9.5
 
-FeHHD+ = FeHD + H+
-        -log_k  -2.60
+Fe+3 + OH- + D-2 = FeOHD
+        log_k  21.1
 
-Fe+3 + 2HHD- = Fe(HHD)2+
-        -log_k  6.36
+Fe+3 + 2D-2 = FeD2-
+        log_k 18.8
+
+Fe+3 + 2OH- + D-2 = Fe(OH)2D-
+        log_k 31.63
+
+Fe+2 + HD- = FeD + H+
+        log_k -6.58
 
 PHASES
  

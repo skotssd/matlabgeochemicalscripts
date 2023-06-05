@@ -80,13 +80,16 @@ Tableau=[...
     1        0         0         0         1      0       1      0     0   0        0      0     0        15.216      0     {'MgHPO4'}
     2        0         0         0         1      0       1      0     0   0        0      0     0        21.066      0     {'MgH2PO4'}
    %  % ascorbic acid reactions
-    2        2         0         0         0      0       0      1     0   0        0      0     0        13.2        0     {'AAH2'}
-    1        2         0         0         0      0       0      1     0   0        0      0     0        9.03        0     {'AAH'}
-    0        2         0         0         0      0       0      1     0   0        0      0     0        -2.69       0     {'AA'}
-    1        3         1         0         0      0       0      1     0   0        0      0     0        23.15       0     {'FeIIAAH'}
-    2        3         1         0         0      0       0      1     0   0        0      0     0        25.75       0     {'FeIIAAH2'}
-    2        4         1         0         0      0       0      2     0   0        0      0     0        24.42       0     {'FeIIIAAH2'}
-        % surface complexes PHREEQC
+    2        2         0         0         0      0       0      0     0   0        1      0     0        14.03       0     {'AAH2'}
+    1        2         0         0         0      0       0      0     0   0        1      0     0        9.72        0     {'AAH'}
+    0        2         0         0         0      0       0      0     0   0        1      0     0        -2.1        0     {'AA'}
+    0        2         1         0         0      0       0      0     0   0        1      0     0        7.4         0     {'FeIIIAA'}
+    -1       2         1         0         0      0       0      0     0   0        1      0     0        5           0     {'FeIIIOHAA'}
+    0        4         1         0         0      0       0      0     0   0        2      0     0        14.6        0     {'FeIIIAA2'}
+    -2       2         1         0         0      0       0      0     0   0        1      0     0        1.53        0     {'FeIIIOH2AA'}
+    0        3         1         0         0      0       0      0     0   0        1      0     0        16.16       0     {'FeIIAA'}
+    1        3         1         0         0      0       0      0     0   0        1      0     0        22.95       0     {'FeIIHAA'}
+    % surface complexes PHREEQC
     1        0         0         0         0      0       0      0     0   0        0      1     0        8.93        0     {'HFOsH'}
     2        0         0         0         0      0       0      0     0   0        0      1     0        16.22       0     {'HFOsH2'}
     1        0         0         0         0      0       0      0     0   0        0      0     1        8.93        0     {'HFOwH'}
@@ -109,7 +112,7 @@ Tableau=[...
     0        0         1         0         0      0       0      0     1    0        0     0     0        1.48        0     {'FeIIICl'}
     0        0         1         0         0      0       0      0     2    0        0     0     0        2.13        0     {'FeIIICl2'}
     0        0         1         0         0      0       0      0     3    0        0     0     0        1.13        0     {'FeIIICl3'}
- ];
+  ];
 
 % end of tableau.  ------------------ % ----------------------------------------------
 
@@ -126,6 +129,8 @@ MASSERR=max(MASSERR);
 
 HFOP=HFOwPO4+HFOwH2PO4+HFOsPO4+HFOsHPO4+HFOsH2PO4;
 
-AAboundFe=FeIIAAH+FeIIAAH2+FeIIIAAH2;
-
+%AAboundFe=FeIIAAH+FeIIAAH2+FeIIIAAH2;
+%AAboundFe=FeIIIAAH2;
+%AAboundFe=FeIIIAA+FeIIAA;
+AAboundFe=FeIIIAA+FeIIIOHAA+FeIIIAA2+FeIIAA+FeIIHAA;
 end
