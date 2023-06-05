@@ -1,4 +1,4 @@
-of 1   Input file: runphreeqc.txt
+   Input file: runphreeqc.txt
   Output file: out.txt
 Database file: PHREEQC_AA.dat
 
@@ -523,6 +523,6 @@ Reading input data for simulation 2.
 ------------------------------------
 
 ----------------------------------
-End of Run after 0.007116 Seconds.
+End of Run after 0.006975 Seconds.
 ----------------------------------
 
